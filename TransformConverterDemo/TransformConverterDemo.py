@@ -78,6 +78,7 @@ class TransformConverterDemoWidget:
     self.SourceSelector.removeEnabled = False
     self.SourceSelector.noneEnabled = True
     self.SourceSelector.showHidden = False
+    self.SourceSelector.renameEnabled = True
     self.SourceSelector.showChildNodeTypes = False
     self.SourceSelector.setMRMLScene( slicer.mrmlScene )
     self.SourceSelector.setToolTip( "Pick up the target point" )
@@ -88,10 +89,12 @@ class TransformConverterDemoWidget:
     #
     self.DestinationSelector = slicer.qMRMLNodeComboBox()
     self.DestinationSelector.nodeTypes = ( ("vtkMRMLLinearTransformNode"), "" )
-    self.DestinationSelector.addEnabled = False
+    self.DestinationSelector.addEnabled = True
     self.DestinationSelector.removeEnabled = False
     self.DestinationSelector.noneEnabled = True
     self.DestinationSelector.showHidden = False
+    self.DestinationSelector.renameEnabled = True
+    self.DestinationSelector.selectNodeUponCreation = True
     self.DestinationSelector.showChildNodeTypes = False
     self.DestinationSelector.setMRMLScene( slicer.mrmlScene )
     self.DestinationSelector.setToolTip( "Pick up the target point" )
