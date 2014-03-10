@@ -81,7 +81,7 @@ class TransformConverterDemoWidget:
     self.SourceSelector.showChildNodeTypes = False
     self.SourceSelector.setMRMLScene( slicer.mrmlScene )
     self.SourceSelector.setToolTip( "Pick up the target point" )
-    parametersFormLayout.addRow("Source Transform: ", self.SourceSelector)
+    parametersFormLayout.addRow("Source: ", self.SourceSelector)
 
     #
     # Target point (vtkMRMLMarkupsFiducialNode)
